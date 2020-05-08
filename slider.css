@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat;
+}
+
+nav {
+    background: #5d4954;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+    border: 2px dotted #1b9bff;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    background: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+#section {
+    position: absolute;
+    left: 0;
+    top: auto;
+    width: 100%;
+    height: calc(100vh - 80px);
+    animation: animate1 5s ease-in-out infinite;
+    background-size: auto;
+}
+
+#kita {
+    padding-left: 25px;
+}
+
+#cok h1 {
+    border-bottom: #413c69 1px solid;
+    font-size: 18px;
+    color: #413c69;
+    padding-left: 15px;
+}
+
+#kit {
+    width: 160px;
+    border: 2px solid #70282A;
+    float: left;
+    margin-right: 20px;
+}
+
+#kit img {
+    width: 150px;
+}
+
+#kit h3 {
+    padding: 5px;
+    margin: auto;
+    color: white;
+    text-transform: capitalize;
+    font-size: 13px;
+    text-align: center;
+}
+
+#kutu1 {
+    width: 250px;
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid #4a47a3;
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#kutu1 p {
+    text-align: justify;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    width: 200px;
+}
+
+h2 {
+    background-color: #70282A;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#icerik {
+    clear: both;
+    height: auto;
+}
+
+#icerik h1 {
+    /*border-bottom: #70282A 1px solid;*/
+    font-size: 18px;
+    color: #70282A;
+    padding-left: 15px;
+}
+
+.outer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5)
+}
+
+@keyframes animate1 {
+    0%,
+    100% {
+        background-image: url(image/guinee5.jpg);
+    }
+    25% {
+        background-image: url(image/guinee6.jpg);
+    }
+    50% {
+        background-image: url(image/guinee7.jpg);
+    }
+    75% {
+        background-image: url(image/guinee8.jpg);
+    }
+    0%
+}

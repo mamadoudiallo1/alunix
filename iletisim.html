@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Working with HTML Forms</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="iletisim.css">
+    <link rel="stylesheet" href="slider.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+        <label class="logo">Mamadou Aliou</label>
+        <ul>
+            <li><a href="slider.html">Hakkında</a></li>
+            <li><a href="Egitim.html">Eğitim</a></li>
+            <li><a href="sehrim.html">Şehrim</a></li>
+            <li><a href="miras.html">Mirasımız</a></li>
+            <li><a href="login.html">login</a></li>
+            <li><a class="active" href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h1>İLETİŞİM BİLGİLERİ</h1>
+
+        <form id="form-user" action="#" method="post">
+            <table>
+                <td>
+                    <div class="form-box error" data-errormsg="">
+                        <label for="input-first">Ad/Soyad</label>
+                        <input type="text" id="input-first" autofocus placeholder="First Name" tabindex="1" />
+                    </div>
+                </td>
+                <td>
+                    <div class="form-box" data-errormsg="">
+                        <label for="input-password">Şifre</label>
+                        <input type="password" id="input-password" required placeholder="Password" tabindex="2" />
+                    </div>
+                </td>
+            </table>
+            <table>
+                <td>
+                    <div class="form-box" data-errormsg="">
+                        <label for="input-email">E-mail</label>
+                        <input type="email" id="input-email" required placeholder="E-mail Address" tabindex="3" />
+                    </div>
+                </td>
+                <td>
+                    <div class="form-box" data-errormsg="">
+                        <label for="input-age">Yaş</label>
+                        <select id="input-age" tabindex="4">
+                            <option value="0">20 Altında</option>
+                            <option value="1">20-30</option>
+                            <option value="2">30-40</option>
+                            <option value="3">40-50</option>
+                            <option value="4">50 Üzeri </option>
+                        </select>
+                    </div>
+                </td>
+            </table>
+            <table>
+                <td>
+                    <div class="form-box" data-errormsg="">
+                        <label for="input-uyruk">Uyruk</label>
+                        <select id="input-uyruk" tabindex="4">
+                            <option value="0">TÜRKİYE</option>
+                            <option value="1">GİNE</option>
+                            <option value="2">IRAN</option>
+                            <option value="3">bULGARİSTAN</option>
+                            <option value="4">FRANSA</option>
+                        </select>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-box" data-errormsg="">
+                        <label for="input-sehir">Şehir</label>
+                        <select id="input-sehir" tabindex="4">
+                            <option value="0">Istanbul</option>
+                            <option value="1">Ankara</option>
+                            <option value="2">Sakarya</option>
+                            <option value="3">İzmir</option>
+                            <option value="4">Bursa</option>
+                        </select>
+                    </div>
+                </td>
+            </table>
+            <table>
+                <td>
+                    <div class="form-box" data-errormsg="">
+                        <label for="input-alive">bilgileri onayla!</label>
+                        <input type="checkbox" id="input-alive" value="yes" tabindex="5" checked />
+                    </div>
+                </td>
+                <td>
+                    <div class="form-box" data-errormsg="">
+                        <label for="input-cins">Cinsiyet</label>
+                        <select id="input-cins">
+                            <option value="0">Erkek</option>
+                            <option value="1">Kadın</option>
+
+                        </select>
+                    </div>
+                </td>
+            </table>
+
+            <div class="form-box">
+                <button id="button-cancel">Sil</button>
+                <button id="button-send">Gönder</button>
+            </div>
+        </form>
+
+    </section>
+
+    <script src="aliou.js"></script>
+</body>
+
+</html>
